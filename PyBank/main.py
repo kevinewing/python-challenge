@@ -16,7 +16,7 @@ with open(csvpath, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvfile)
 
-    profit
+    profit = 0
     for row in csvreader:
         months += 1
         profit = profit + float(row[1])
